@@ -1,0 +1,32 @@
+.main-display-container {
+  margin-top: 80px;
+}
+
+app-topbar {
+  z-index: 1;
+}
+
+app-sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+@media (max-width: 992px) {
+  app-sidebar {
+    width: 40%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  app-sidebar {
+    width: 100%;
+  }
+}

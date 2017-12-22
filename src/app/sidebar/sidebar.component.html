@@ -1,0 +1,4 @@
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="route-link" (click)="navbar.toggleSideBar()">&times;</a>
+  <a *ngFor="let route of setOfRoute" class="route-link" [href]="route.url">{{route.name}}</a>
+</div>
